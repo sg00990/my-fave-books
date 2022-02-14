@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <title>My Favorite Books</title>
+</head>
+<body>
+    <nav class="w3-bar w3-black">
+        <a href="home.html" class="w3-button w3-bar-item">Home</a>
+        <a href="hp.html" class="w3-button w3-bar-item">Harry Potter</a>
+        <a href="pj.html" class="w3-button w3-bar-item">Percy Jackson</a>
+        <a href="un.html" class="w3-button w3-bar-item">Unwind</a>
+    </nav>
+
+    <!--Images-->
+    <section>
+        <img class="mySlides" src="https://www.cc-pl.org/wp-content/uploads/2019/07/book-header-860x280.jpg" style="width:100%">
+        <img class="mySlides" src="https://mybookwormblog.files.wordpress.com/2014/02/linked-percy-jackson-covers.gif" style="width:100%">
+        <img class="mySlides" src="https://storyandsomnomancy.files.wordpress.com/2015/09/unwind.jpg" style="width:100%">
+    </section>
+
+    <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <h2 class="w3-wide">MY FAVORITE BOOKS</h2>
+        <p class="w3-opacity"><i>The Authors:</i></p>
+      </section>
+
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel()
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+         x[myIndex-1].style.display = "block";
+         setTimeout(carousel, 3000);
+        }
+    </script>
+
+      <!--Authors-->
+      <section class="w3-row-padding w3-center w3-light-grey">
+        <article class="w3-third">
+          <p>J.K. Rowling</p>
+          <img src="https://www.biography.com/.image/t_share/MTc5OTUwMTA3MzE4Mjk3OTQ0/gettyimages-1061157246.jpg" alt="Author of Harry Potter" style="width:100%">
+          <p>Author of Harry Potter</p>
+        </article>
+        <article class="w3-third">
+          <p>Rick Riordan</p>
+          <img src="https://i.guim.co.uk/img/media/81558661c98cd8213f68f3f21d8b9e5cf284b388/722_91_1794_1077/master/1794.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=756af8c113f2c1177ce0ecc07636af6a" alt="Author of Percy Jackson" style="width:100%">
+          <p>Author of Percy Jackson</p>
+        </article>
+        <article class="w3-third">
+          <p>Neal Shusterman</p>
+          <img src="https://booksparks.com/wp-content/uploads/2021/02/images.jpeg" alt="Author of Unwind" style="width:100%">
+          <p>Author of Unwind</p>
+        </article>
+      </section>
+      <!-- Footer -->
+ <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+    <a href="#"><i class="fa fa-facebook-official"></i></a>
+    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-flickr"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <p class="w3-medium">
+      Tutorial by <a href="https://www.w3schools.com/howto/howto_website.asp" target="_blank">w3schools.com</a>
+    </p>
+  </footer>
+    
+</body>
+</html>
